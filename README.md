@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/icon.css">
+    <link rel="stylesheet" href="index.php">
+    <link rel="stylesheet" href="login.php">
     <title>Anasayfa</title>
     <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
 	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
@@ -75,7 +77,7 @@
 
      <!--Hakkında Başlangıç-->
 
-     <section class="p-5 text center hakkimizda">
+     <section class="p-5 text center hakkimizda" id="hakkinda">
        <section class="container">
         
         <h1 class="mb-5 font-weight-bold metin">HAKKINDA</h1>
@@ -86,39 +88,35 @@
         Ortaokuldaki bir hocam sayesinde kitap okuma alışkanlığı kazandım. Yine ortaokulda basketbol ve voleybol oynamaya başladım ve voleybolu lisede de devam ettirdim. Ne kadar amatör olarak oynamış olsam da gelişimime katkıda bulunmuştur.
         Piknik yapmayı, gezmeyi, eğlenmeyi çok severim.</h9> <br><br>
 
-        <div class="bs-example" data-example-id="simple-carousel">
-          <div class="carousel slide" id="carousel-example-generic" data-ride="carousel">
-              <ol class="carousel-indicators">
-                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                  <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
-                  <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
-              </ol>
-              <div class="carousel-inner" role="listbox">
-                  <div class="item active"><img alt="First slide [900x500]"
-                                                data-src="holder.js/900x500/auto/#777:#555/text:First slide"
-                                                src="img/kitap.png" data-holder-rendered="true"></div>
-                  <div class="item"><img alt="Second slide [900x500]"
-                                         data-src="holder.js/900x500/auto/#666:#444/text:Second slide"
-                                         src="img/basketbol.png" data-holder-rendered="true">
-                  </div>
-                  <div class="item">
-                      <img alt="Third slide [900x500]" data-src="holder.js/900x500/auto/#555:#333/text:Third slide"
-                           src="img/voleybol.png" data-holder-rendered="true"></div>
-              </div>
-              <a href="#carousel-example-generic" class="left carousel-control" role="button" data-slide="prev"> <span
-                          class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span
-                          class="sr-only">Previous</span> </a> <a href="#carousel-example-generic"
-                                                                  class="right carousel-control" role="button"
-                                                                  data-slide="next"> <span
-                          class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span
-                          class="sr-only">Next</span> </a>
-             </div>
+        <div class="row">
+          <div class="col-md-3">
+            <figure class="figure">
+              <img src="img/basketbol.png" class="figure-img img-fluid rounded shadow" alt="...">
+            </figure>
           </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3">
+            <figure class="figure">
+              <img src="img/voleybol.png" class="figure-img img-fluid rounded shadow" alt="...">
+            </figure>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3">
+            <figure class="figure">
+              <img src="img/kitap.png" class="figure-img img-fluid rounded shadow" alt="...">
+            </figure>
+          </div>
+        </div>
+        
         </section>
       <!--Hakkında Bitiş-->
       <hr>
       <!--CV Başlangıç-->
-      <h5 class="metincv"> CV </h5>
+      <h5 class="metincv" id="cv"> CV </h5>
 
       <article class="all-cv">
       
@@ -137,44 +135,9 @@
 
      <!--Şehrim Başlangıç-->
 
-     <h8 class="sehrim">ŞEHRİM</h8><br><br>
-
-     <!--<div class="bs-example" data-example-id="simple-carousel">
-      <div class="carousel slide" id="carousel-example-generic" data-ride="carousel">
-          <ol class="carousel-indicators">
-              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
-              <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
-          </ol>
-          <d class="carousel-inner" role="listbox">
-              <div class="item active"><img alt="First slide [900x500]"
-                                            data-src="holder.js/900x500/auto/#777:#555/text:First slide"
-                                            src="img/topdagi.jpg" data-holder-rendered="true"></div>
-                                            
-              <div class="item"><img alt="Second slide [900x500]"
-                                     data-src="holder.js/900x500/auto/#666:#444/text:Second slide"
-                                     src="img/evler.jpg" data-holder-rendered="true">
-              </div>
-              <div class="item">
-                  <img alt="Third slide [900x500]" data-src="holder.js/900x500/auto/#555:#333/text:Third slide"
-                       src="img/kesikminare.jpg" data-holder-rendered="true"></div>
-              <div class="item">
-                  <img alt="Third slide [900x500]" data-src="holder.js/900x500/auto/#555:#333/text:Third slide"
-                       src="img/helvacilik.jpg" data-holder-rendered="true"></div>
-               <div class="item">
-                 <img alt="Third slide [900x500]" data-src="holder.js/900x500/auto/#555:#333/text:Third slide"
-                      src="img/muze.jpg" data-holder-rendered="true"></div>
-          </div>
-          <a href="#carousel-example-generic" class="left carousel-control" role="button" data-slide="prev"> <span
-                      class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span
-                      class="sr-only">Previous</span> </a> <a href="#carousel-example-generic"
-                                                              class="right carousel-control" role="button"
-                                                              data-slide="next"> <span
-                      class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span
-                      class="sr-only">Next</span> </a></div>-->
-                      
-                      <a href="evler.html"><img src="img/evlerr.png"></a>
+     <h8 class="sehrim" id="sehrim">ŞEHRİM</h8><br><br>
                       <a href="kesikminare.html"><img src="img/kesik.png"></a>
+                      <a href="evler.html"><img src="img/evlerr.png"></a>                 
                       <a href="helvacilik.html"><img src="img/helvacilikk.jpg.png"></a>
                       <a href="muze.html"><img src="img/muzee.png"></a>
   </div>
@@ -183,18 +146,27 @@
   <!--Şehrim Bitiş--> 
   <hr>
   <!--Mirasımız Başlangıç--> 
-  <h9 class="metinm">MİRASIMIZ</h9>
-
+  <h9 class="metinm" id="miras">MİRASIMIZ</h9>
+  <br><br>
+  <h12 class="omerpasa">ÖMER PAŞA CAMİİ</h12>
+  <br><br>
+  <a href="omerpasa.html"><img src="img/omerpasa.jpg"></a>
   <!--Mirasımız Bitiş--> 
 <hr>
-  <!--İlgi alanlarım Başlangıç--> 
-  <h10 class="metinilgi">İLGİ ALANLARIM</h10>
 
+  <!--İlgi alanlarım Başlangıç--> 
+  <h10 class="metinilgi" id="ilgialanlarim">İLGİ ALANLARIM</h10>
+  <br><br>
+  
+
+
+ 
   <!--İlgi alanlarım Bitiş--> 
+
 <hr>
       <!--İletişim Başlangıç-->
 
-      <h1 class="metiniletisim">İLETİŞİM SAYFASI</h1>
+      <h1 class="metiniletisim" id="iletisim">İLETİŞİM SAYFASI</h1>
     <form name="form-isim" action="index.php" method="post" >
         <!--ad-soyad-->
         <table cellspacing="8">
@@ -209,9 +181,7 @@
             <table>
             
         <!--ad-soyad-->
-        <h2>
-
-        </h2>
+        <br>
 
         <!--cinsiyet-->
         Cinsiyetiniz:<br>
@@ -334,20 +304,15 @@
       <!--İletişim Bitiş-->
 <hr>
       <!--Login Başlangıç-->
-      <h3 class="metinl">LOGİN SAYFASI</h3>
+      <h3 class="metinl" id="login">LOGİN SAYFASI</h3>
 
-      <form>
-        <div class="form-group" action="login.php" method="post">
-
-          <label for="exampleInputEmail1">Kullanıcı adınız..</label>
-          <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Username"><br>
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Şifre</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"><br>
-        </div>       
-        <button type="submit" class="btn btn-primary">Giriş</button>
-      </form>
+      <form action="kontrol.php" method="post">
+        Kullanıcı:<br/>
+        <input type="text" name="kullanici" /><br/>
+        Şifre:<br/>
+        <input type="password" name="sifre" /><br/>
+        <input type="submit" value="Giriş yap" />
+        </form>
 
       <!--Login Bitiş-->
 
@@ -753,3 +718,72 @@
 </body>
 </html>
 <!--kesikminare.html-->
+
+<!--index.php-->
+<?php
+ 
+echo "Ad:  "+$_POST['adi'];
+?>
+
+<?php
+ 
+echo "Soyad:  "+$_POST['soyadi'];
+?>
+
+<?php
+ 
+echo "Cinsiyet:  "+$_POST['cinsiyet'];
+?>
+
+<?php
+ 
+echo "E-mail adresiniz:  "+$_POST['email'];
+?>
+
+<?php
+ 
+echo "Yaşadığı şehir:  "+$_POST['sehir'];
+?>
+<!--index.php-->
+
+<!--kontrol.php-->
+<?php
+if(isset($_POST['kullanici']) && isset($_POST['sifre'])) { // form gönderilmiş mi
+   $kullanici = $_POST['kullanici'];
+   $sifre = $_POST['sifre'];
+ 
+   if(empty($kullanici) || empty($sifre)) { // gönderilenler boş mu
+      echo 'Lütfen boş bırakmayın';
+   } else {
+      if($kullanici == 'b201210090@sakarya.edu.tr' && $sifre == 'b201210090') { // bilgiler doğru mu
+         session_start();
+         $_SESSION['kullanici'] = 'b201210090@sakarya.edu.tr';
+         $_SESSION['sifre'] = 'b201210090';
+         echo "Giriş Başarılı. Panel'e yönlendiriliyorsunuz";
+         header('refresh: 5; url=panel.php'); 
+      } else {
+         echo 'Yanlış kullanıcı adı ya da şifre';
+      }
+   }
+} else {
+   echo 'Lütfen formu kullanın';
+}
+
+?>
+<!--kontrol.php-->
+
+<!--panel.php-->
+<?php
+session_start(); // session kullanımı başlattık
+if(isset($_SESSION['kullanici']) && isset($_SESSION['sifre'])) { // bu sefer sessionlar tanımlanmış mı diye bakıyoruz
+   if($_SESSION['kullanici'] == 'b201210090@sakarya.edu.tr' && $_SESSION['sifre'] == 'b201210090') {
+      echo 'Panele hoşgeldiniz! Bu yazıyı sadece giriş yapmış kişiler görebilir.';
+   } else {
+      session_destroy(); // bilgileri yanlış olduğu için sessionlar silinir
+      echo 'Bilgileriniz yanlış, buraya yanlızca giriş yapmış kişiler girebilir';
+   }
+} else {
+   echo 'Sadece giriş yapmış kişiler görebilir';
+}
+?>
+<!--panel.php-->
