@@ -173,7 +173,6 @@
                       class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span
                       class="sr-only">Next</span> </a></div>-->
                       
-                      <a href="topdagi.html"><img src="img/topdag.png"></a>
                       <a href="evler.html"><img src="img/evlerr.png"></a>
                       <a href="kesikminare.html"><img src="img/kesik.png"></a>
                       <a href="helvacilik.html"><img src="img/helvacilikk.jpg.png"></a>
@@ -196,7 +195,7 @@
       <!--İletişim Başlangıç-->
 
       <h1 class="metiniletisim">İLETİŞİM SAYFASI</h1>
-    <form  action="iletisim.php" method="post" >
+    <form name="form-isim" action="index.php" method="post" >
         <!--ad-soyad-->
         <table cellspacing="8">
             <tr>
@@ -240,14 +239,91 @@
         <h2>
         </h2>
         
-        Yaşadığınız Şehri Seçiniz Seçiniz..<br>
+        Yaşadığınız Şehri Seçiniz..<br>
         <select name="sehir">
             <option value="bos">Seçiniz...</option>
-            <option value="adana">Adana</option>
-            <option value="subu">Sakarya Uyg. Bilimler Üniversitesi</option>
-            <option value="kou">Kocaeli Üniversitesi</option>
-            <option value="itu">İstanbul Teknik Üniversitesi</option>
-
+            <option value="1">Adana</option>
+            <option value="2">Adıyaman</option>
+            <option value="3">Afyonkarahisar</option>
+            <option value="4">Ağrı</option>
+            <option value="68">Aksaray</option>
+            <option value="5">Amasya</option>
+            <option value="6">Ankara</option>
+            <option value="7">Antalya</option>
+            <option value="75">Ardahan</option>
+            <option value="8">Artvin</option>
+            <option value="9">Aydın</option>
+            <option value="10">Balıkesir</option>
+            <option value="74">Bartın</option>
+            <option value="72">Batman</option>
+            <option value="69">Bayburt</option>
+            <option value="11">Bilecik</option>
+            <option value="12">Bingöl</option>
+            <option value="13">Bitlis</option>
+            <option value="14">Bolu</option>
+            <option value="15">Burdur</option>
+            <option value="16">Bursa</option>
+            <option value="17">Çanakkale</option>
+            <option value="18">Çankırı</option>
+            <option value="19">Çorum</option>
+            <option value="20">Denizli</option>
+            <option value="21">Diyarbakır</option>
+            <option value="81">Düzce</option>
+            <option value="22">Edirne</option>
+            <option value="23">Elazığ</option>
+            <option value="24">Erzincan</option>
+            <option value="25">Erzurum</option>
+            <option value="26">Eskişehir</option>
+            <option value="27">Gaziantep</option>
+            <option value="28">Giresun</option>
+            <option value="29">Gümüşhane</option>
+            <option value="30">Hakkâri</option>
+            <option value="31">Hatay</option>
+            <option value="76">Iğdır</option>
+            <option value="32">Isparta</option>
+            <option value="34">İstanbul</option>
+            <option value="35">İzmir</option>
+            <option value="46">Kahramanmaraş</option>
+            <option value="78">Karabük</option>
+            <option value="70">Karaman</option>
+            <option value="36">Kars</option>
+            <option value="37">Kastamonu</option>
+            <option value="38">Kayseri</option>
+            <option value="71">Kırıkkale</option>
+            <option value="39">Kırklareli</option>
+            <option value="40">Kırşehir</option>
+            <option value="79">Kilis</option>
+            <option value="41">Kocaeli</option>
+            <option value="42">Konya</option>
+            <option value="43">Kütahya</option>
+            <option value="44">Malatya</option>
+            <option value="45">Manisa</option>
+            <option value="47">Mardin</option>
+            <option value="33">Mersin</option>
+            <option value="48">Muğla</option>
+            <option value="49">Muş</option>
+            <option value="50">Nevşehir</option>
+            <option value="51">Niğde</option>
+            <option value="52">Ordu</option>
+            <option value="80">Osmaniye</option>
+            <option value="53">Rize</option>
+            <option value="54">Sakarya</option>
+            <option value="55">Samsun</option>
+            <option value="56">Siirt</option>
+            <option value="57">Sinop</option>
+            <option value="58">Sivas</option>
+            <option value="63">Şanlıurfa</option>
+            <option value="73">Şırnak</option>
+            <option value="59">Tekirdağ</option>
+            <option value="60">Tokat</option>
+            <option value="61">Trabzon</option>
+            <option value="62">Tunceli</option>
+            <option value="64">Uşak</option>
+            <option value="65">Van</option>
+            <option value="77">Yalova</option>
+            <option value="66">Yozgat</option>
+            <option value="67">Zonguldak</option>
+          </select>
         </select>
 
         <h2>
@@ -261,10 +337,10 @@
       <h3 class="metinl">LOGİN SAYFASI</h3>
 
       <form>
-        <div class="form-group">
-          <label for="exampleInputEmail1">Email adresiniz</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-          <small id="emailHelp" class="form-text text-muted">E-postanızı asla başkalarıyla paylaşmayacağız.</small>
+        <div class="form-group" action="login.php" method="post">
+
+          <label for="exampleInputEmail1">Kullanıcı adınız..</label>
+          <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Username"><br>
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1">Şifre</label>
@@ -618,4 +694,62 @@
 </body>
 </html>
 
+<!--kesikminare.html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kesik Minare</title>
+</head>
+<body>
+    <section class="p-5 text center evler">
+        <div class="container">
+         
+         <h1 class="mb-5 font-weight-bold evlermetin">KESİK MİNARE</h1>
+    <hr>
 
+    <article class="tarihi">
+      
+        <article class="tarihiev">
+          <h8 class="gecmis">Tanıtımı</h8>
+          <p class="p">Antalya'nın Elmalı ilçesinde, 14'üncü veya 15'inci yüzyıldan kaldığı düşünülen ahşap Eski Cami, 78 yıl önce çıkan yangında kül olurken, minaresi asırlardır duruyor. Yangın sorası yaklaşık 13 metre yüksekliğindeki minarede 1990'lı yıllarda restorasyon yapıldı. 2006 yılında da minare Elmalı Belediyesi'nce korumaya alındı.
+
+            <br><br>
+            'Kesik Minare' olarak bilinen, taştan yapılma minare, ilçenin simgesi haline geldi. Elmalı Belediyesi Kültür ve Sosyal İşler Müdürü ve arkeolog Durmuş Altan, minarenin güneyinde, kaide üzerinde bir de güneş saati bulunduğunu anlattı. Altan, "En eski camimiz günümüze kalan minaresiyle olanca güzelliğiyle ihtişamını hala sergilemektedir" dedi. 
+            <br><br>
+        </article>
+                    
+         </article>
+        </article>
+
+
+        <hr>
+    <div class="bs-example" data-example-id="simple-carousel">
+        <div class="carousel slide" id="carousel-example-generic" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic"  class="active"></li>
+                <li data-target="#carousel-example-generic"  class=""></li>
+                <li data-target="#carousel-example-generic"  class=""></li>
+            </ol>
+            <d class="carousel-inner" role="listbox">
+                <div class="item active"><img alt="First slide [900x500]"
+                                            data-src="holder.js/900x500/auto/#777:#555/text:First slide"
+                                            src="img/kesikminare.jpg" data-holder-rendered="true"></div>
+                <div class="item active"><img alt="First slide [900x500]"
+                                            data-src="holder.js/900x500/auto/#777:#555/text:First slide"
+                                            src="img/kesikm.jpg" data-holder-rendered="true"></div>
+            <a href="#carousel-example-generic" class="left carousel-control" role="button" data-slide="prev"> <span
+                        class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span
+                        class="sr-only"></span> </a> <a href="#carousel-example-generic"
+                                                                class="right carousel-control" role="button"
+                                                                data-slide="next"> <span
+                        class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span
+                        class="sr-only"></span> </a></div>
+                    </div>
+            </section>
+</body>
+</html>
+<!--kesikminare.html-->
