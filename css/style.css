@@ -1,0 +1,121 @@
+.kapsayici{
+    background-color: #ca8a8b;
+}
+.nav-link{
+    color:#5b6d5b;
+    font-family: "Montserrat","sans-serif";
+}
+.baslik{
+    color: #035003;
+    font-size: smaller;
+}
+
+@media(max-width:768px){
+
+    .nav-item{
+        margin-top: 15px;
+        transition: all  0.5s ease;
+    }
+    .nav-item:hover{
+        background-color:#faf1e6;
+        padding-left: 40px;
+    }
+    .nav-link:hover{
+        color: #5b6d5b;
+    }
+    .icon_border{
+        color: maroon;
+    }
+}
+.hakkimizda{
+    background-color: #faf1e6;
+}
+
+.metin{
+    font-family: 'Roboto Slab', serif;
+    background-color: mediumaquamarine;
+}
+.metinl{
+    font-family: 'Roboto Slab', serif ;
+    background-color: rgb(126, 82, 2);
+}
+.metiniletisim{
+    font-family: 'Roboto Slab', serif;
+    background-color: rgb(167, 38, 15);
+}
+.metincv{
+    font-family: 'Roboto Slab', serif ;
+    background-color: rgb(104, 169, 223);
+}
+.metinm{
+    font-family: 'Roboto Slab', serif ;
+    background-color: #0d960d;
+}
+.metinilgi{
+    font-family: 'Roboto Slab', serif;
+    background-color: rgb(64, 111, 180);
+}
+
+.all-cv {
+    margin: 0;
+    padding: 5px;
+    background-color: lightgray;
+  }
+  
+  .all-cv > h5, .cv {
+    margin: 10px;
+    padding: 5px;
+  }
+  
+  .cv {
+    background: white;
+  }
+  
+  .cv > h8, p {
+    margin: 4px;
+    font-size: 90%;
+  }
+
+.sehrim{
+    font-family: 'Roboto Slab', serif ;
+    background-color: magenta;
+}
+
+.evler{
+    background-color: #faf1e6;
+}
+.evlermetin{
+    font-family: 'Roboto Slab', serif ;
+    background-color: #ca8a8b;
+}
+.gecmis{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-size: 40%;
+}
+.p{
+    background-size: 30%;
+}
+
+.tarihi {
+    margin: 0;
+    padding: 5px;
+    background-color: lightgray;
+  }
+  
+  .tarihi > h1, .tarihiev {
+    margin: 10px;
+    padding: 5px;
+  }
+  
+  .tarihiev {
+    background: white;
+  }
+  
+  .tarihiev > h8, p {
+    margin: 4px;
+    font-size: 90%;
+  }
+
+  .omerpasa{
+      background-color:#18e718;
+  }
